@@ -2,6 +2,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Checkout from "../Components/Checkout";
 import Subbanner from "../Components/Subbanner";
+import "./Cartpage.css";
 export default function Cartpage() {
     return (
         <>
