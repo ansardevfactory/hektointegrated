@@ -1,0 +1,30 @@
+.body {
+    margin: 0;
+}
+
+.componentinbetweenbanner2 {
+    padding-top: 20px;
+}
+
+.componentlatestproduct {
+    /* margin: 50px;
+    justify-content: space-between; */
+}
+
+.componenttrendingproducts {
+    margin: 50px;
+}
+
+.componentcheckout {
+    padding-bottom: 50px;
+    margin: 20px;
+}
+.componentsubbanner{
+    background: #3e4697;
+}
+.componentorderlist{
+    padding-right: 485px;
+}
+.componentlatestproducts,.componentofferlist,.componentinbetweenbanner1{
+    padding-top: 50px;
+}
