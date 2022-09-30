@@ -1,21 +1,2 @@
-.shoppage_listpage_col {
-  display: flex;
-  margin-left: 10%;
-}
 
-.shoppage_listpage_col_fverticalbar {
-  width: 20%;
-}
 
-.shoppage_listpage_col_listview {
-  width: 78%;
-}
-
-.shoppage_gridpage_gridview {
-  margin-left: 4%;
-}
-
-.subbanner {
-  width: 83.5616%;
-  /* background-color:red ; */
-}

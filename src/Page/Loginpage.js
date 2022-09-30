@@ -11,9 +11,7 @@ export default function Loginpage() {
     <>
       <div className="loginpage">
         <Header />
-        <div className="subbanner">
-          <Subbanner />
-        </div>
+        <Subbanner title={"My Account"}/>
         <div className="loginpage_logsign">
           <div className="loginpage_logsign_login">
             <Login />
