@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.payments_component{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.subbanner{
+    width: 83.5616%;
+    /* background-color:red ; */
+}
+
