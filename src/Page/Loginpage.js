@@ -1,10 +1,10 @@
 import React from "react";
 import "./Loginpage.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Subbanner from "../components/Subbanner";
-import Login from "../components/Login";
-import Signup from "../components/Signup";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import Subbanner from "../Components/Subbanner";
+import Login from "../Components/Login";
+import Signup from "../Components/Signup";
 
 export default function Loginpage() {
   return (

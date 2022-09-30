@@ -1,10 +1,10 @@
 import React from "react";
 import "./Orderdetailpage.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Subbanner from "../components/Subbanner";
-import Orderdetails from "../components/Orderdetails";
-import Rating from "../components/Rating";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import Subbanner from "../Components/Subbanner";
+import Orderdetails from "../Components/Orderdetails";
+import Rating from "../Components/Rating";
 
 export default function Orderdetailpage() {
   return (
