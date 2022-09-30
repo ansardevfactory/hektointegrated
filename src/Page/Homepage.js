@@ -12,10 +12,15 @@ import Latestblog from "../Components/Latestblog";
 import Footer from "../Components/Footer";
 import "./Homepage.css";
 import BrandList from "../Components/BrandList";
+import { useNavigate } from "react-router-dom";
 export default function Homepage() {
+  const navigate=useNavigate();
+  const handleCartClick=()=>{
+    navigate('CartPage')
+  }
   return (
     <>
-      <Header />
+      <Header handleCartClick={handleCartClick}/>
       <Mainbanner />
       <div className="componentfeaturedlist">
         <Featuredlist />
