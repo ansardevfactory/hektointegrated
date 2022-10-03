@@ -69,7 +69,7 @@ function Header({handleCartClick,handleLoginClick,handleHomeClick,handleShopClic
       </div>
       <div className="Header_r2">
         <div className="Header_r2_col1">
-          <label> Hekto</label>
+          <label> Logo</label>
         </div>
         <div className="Header_r2_col2">
           {/* <select>
