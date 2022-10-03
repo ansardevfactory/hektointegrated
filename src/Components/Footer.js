@@ -50,7 +50,7 @@ export default function Footer({handleSignupClick,handleOrderDetailPageClick,han
         </div>
         <div className="footer_row2">
           <div className="footer_row2_col1">
-            <label> ©Hekto - All Rights Reserved</label>
+            <label> ©Logo - All Rights Reserved</label>
           </div>
           <div className="footer_row2_col2">
             <div>
