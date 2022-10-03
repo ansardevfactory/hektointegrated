@@ -11,6 +11,7 @@ import Orderlistpage from './Page/Orderlistpage';
 import Paymentpage from './Page/Paymentpage';
  import Profilepage from './Page/Profilepage';
 import Shoppage from './Page/Shoppage';
+import Shoppage_listpage from './Page/Shoppage_listpage';
 import Singleproductpage from './Page/Singleproductpage';
 
 export default function Navigation() {
@@ -27,6 +28,7 @@ export default function Navigation() {
             <Route path='/paymentpage' element={<Paymentpage/>}></Route>
             <Route path='/profilepage' element={<Profilepage/>}></Route>
             <Route path='/Shoppage' element={<Shoppage/>}></Route>
+            <Route path='/shoppage_listpage' element={<Shoppage_listpage/>}></Route>
             <Route path='/singleproductpage' element={<Singleproductpage/>}></Route>
         </Routes>
     </HashRouter>
