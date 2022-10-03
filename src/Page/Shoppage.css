@@ -1,2 +1,13 @@
+.shoppage_gridpage_gridview{
+    display: flex;
+    margin-left: 10%;
+}
 
+.shoppage_gridpage_col_fverticalbar{
+    width: 20%;
+}
+
+.shoppage_gridpage_col_listview{
+    width: 7%;
+}
 

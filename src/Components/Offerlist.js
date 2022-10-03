@@ -18,7 +18,7 @@ function Offerlist() {
     <div className="Offerlist_outercover">
     
       <div className="Offerlist-l1">
-        {/* <label> What Shopex Offers!</label> */}
+        <label> What Shopex Offers!</label>
       </div>
 
       <div className="Offerlist-img-cover">

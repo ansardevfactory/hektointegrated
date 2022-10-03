@@ -9,12 +9,12 @@ import LatestProducts_icons1 from './Images/LatestProducts_icons1.png'
 import LatestProducts_icons2 from './Images/LatestProducts_icons2.png';
 import LatestProducts_icons3 from './Images/LatestProducts_icons3.png'
 import LatestProducts_icons4 from './Images/LatestProducts_icons4.png'
-function LatestProducts() {
+function LatestProducts({handleViewDetailsClick}) {
     return (
      <> 
         <div className="LatestProducts_outer">
             <div className="LatestProducts_header">
-                <label>Leatest Products</label>
+                <h4>Leatest Products</h4>
             </div>
             <div className="LatestProducts_menu">
 
@@ -28,15 +28,15 @@ function LatestProducts() {
             <div className="LatestProducts_outerimage_container">
                 {/* -------------  row1---outer--chairimage1----------------------------- */}
                 <div className="LatestProducts_inner_outerimage1_container1_row1">
-                    <div className="LatestProducts_inner_inner_imagefull">
+                    <div className="LatestProducts_inner_inner_imagefull" onClick={e=>handleViewDetailsClick()}>
                         <div className="LatestProducts_inner_top_image_row1">
                             <div className="LatestProducts_icons_row1_col1">
                                 <div className="LatestProducts_icon_imgsale_col1_row1">
-                                    <img src={LatestProducts_icons1}></img>
+                                    <img src={LatestProducts_icons1} ></img>
 
                                 </div>
                                 <div className="LatestProducts_icons_col1_row2">
-                                    <div className="LatestProducts_imageicons1"><img src={LatestProducts_icons2}></img></div>
+                                    <div className="LatestProducts_imageicons1"><img src={LatestProducts_icons2} ></img></div>
                                     <div className="LatestProducts_imageicons2"><img src={LatestProducts_icons3}></img></div>
                                     <div className="LatestProducts_imageicons2"><img src={LatestProducts_icons4}></img></div>
                                 </div>
@@ -56,7 +56,7 @@ function LatestProducts() {
                         </div>
                     </div>
                     {/* -------------- */}
-                    <div className="LatestProducts_inner_inner_imagefull">
+                    <div className="LatestProducts_inner_inner_imagefull" onClick={e=>handleViewDetailsClick()}>
                         <div className="LatestProducts_inner_top_image_row1">
                             <div className="LatestProducts_icons_row1_col1">
                                 <div className="LatestProducts_icon_imgsale_col1_row1">
@@ -85,7 +85,7 @@ function LatestProducts() {
 
                     </div>
                     {/* ---------- */}
-                    <div className="LatestProducts_inner_inner_imagefull">
+                    <div className="LatestProducts_inner_inner_imagefull" onClick={e=>handleViewDetailsClick()}>
                         <div className="LatestProducts_inner_top_image_row1">
                             <div className="LatestProducts_icons_row1_col1">
                                 <div className="LatestProducts_icon_imgsale_col1_row1">
@@ -118,7 +118,7 @@ function LatestProducts() {
                 {/* --------------------row2---outer---chairimage2--------------- */}
                 <div className="LatestProducts_inner_outerimage2_container2_row2">
 
-                    <div className="LatestProducts_inner_inner_imagefull">
+                    <div className="LatestProducts_inner_inner_imagefull" onClick={e=>handleViewDetailsClick()}>
                         <div className="LatestProducts_inner_top_image_row1">
                             <div className="LatestProducts_icons_row1_col1">
                                 <div className="LatestProducts_icon_imgsale_col1_row1">
@@ -148,7 +148,7 @@ function LatestProducts() {
 
                     </div>
                     {/* --------- */}
-                    <div className="LatestProducts_inner_inner_imagefull">
+                    <div className="LatestProducts_inner_inner_imagefull" onClick={e=>handleViewDetailsClick()}>
                         <div className="LatestProducts_inner_top_image_row1">
                             <div className="LatestProducts_icons_row1_col1">
                                 <div className="LatestProducts_icon_imgsale_col1_row1">
@@ -177,7 +177,7 @@ function LatestProducts() {
 
                     </div>
                     {/* ---------- */}
-                    <div className="LatestProducts_inner_inner_imagefull">
+                    <div className="LatestProducts_inner_inner_imagefull" onClick={e=>handleViewDetailsClick()}>
                         <div className="LatestProducts_inner_top_image_row1">
                             <div className="LatestProducts_icons_row1_col1">
                                 <div className="LatestProducts_icon_imgsale_col1_row1">

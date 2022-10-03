@@ -7,7 +7,7 @@
 }
 
 .Latestblog_row1 label {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #151875;
     font-weight: bold;
@@ -20,6 +20,7 @@
     padding-top: 40px;
     padding-left: 150px;
     padding-right: 150px;
+    padding-bottom: 50px;
     justify-content: space-between;
 }
 
@@ -28,6 +29,7 @@
 .Latestblog_row2_col1_text_l3,
 .Latestblog_row2_col1_text_l4 {
     padding-bottom: 15px;
+    padding-left: 20px;
 
 }
 
@@ -82,6 +84,7 @@
 .Latestblog_row2_col2_text_l3,
 .Latestblog_row2_col2_text_l4 {
     padding-bottom: 15px;
+    padding-left: 20px;
 
 }
 
@@ -136,6 +139,7 @@
 .Latestblog_row2_col3_text_l3,
 .Latestblog_row2_col3_text_l4 {
     padding-bottom: 15px;
+    padding-left: 20px;
 
 }
 

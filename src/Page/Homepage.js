@@ -55,7 +55,7 @@ export default function Homepage() {
         <Featuredlist handleViewDetailsClick={handleViewDetailsClick} />
       </div>
       <div className="componentlatestproducts">
-        <LatestProducts />
+        <LatestProducts handleViewDetailsClick={handleViewDetailsClick}/>
       </div>
       <div className="componentofferlist">
         <Offerlist />
@@ -66,7 +66,10 @@ export default function Homepage() {
       <div className="componenttrendingproducts">
         <TrendingProducts handleShoppageClick={handleShoppageClick} />
         <Discountitem handleShoppageClick={handleShoppageClick} />
-        <Topcategories handleShoppageClick={handleShoppageClick} />
+        <Topcategories 
+        handleShoppageClick={handleShoppageClick} 
+        handleViewDetailsClick={handleViewDetailsClick}
+        />
       </div>
       <div className="componentinbetweenbanner2">
         <InBetweenBanner2 handleShoppageClick={handleShoppageClick}/>

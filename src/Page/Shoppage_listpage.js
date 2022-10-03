@@ -1,21 +1,18 @@
-import { React, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import Subbanner from "../Components/Subbanner";
 import Filterhorizontal from "../Components/Filterhorizontal";
 import FilterBarVertical from "../Components/FilterBarVertical";
-import Gridview from "../Components/Gridview";
+import Listview from "../Components/Listview";
 import BrandList from "../Components/BrandList";
 import Footer from "../Components/Footer";
-import Shoppage_listpage from "./Shoppage_listpage";
-import "./Shoppage.css";
+import "./Shoppage_listpage.css";
 
-export default function Shoppage_gridpage() {
+export default function Shoppage_listpage() {
   const navigate = useNavigate();
-  // const [list,setList]=useState(true);
   const handleListpageClick = () => {
     navigate("/Shoppage_listpage");
-    // setList(list ? <Shoppage_listpage/> : <Shoppage_gridpage/>)
   };
   const handleGridpageClick = () => {
     navigate("/Shoppage");
@@ -46,24 +43,24 @@ export default function Shoppage_gridpage() {
   };
   return (
     <>
-      <div className="shoppage_gridpage">
+      <div className="shoppage_listpage">
         <Header
           handleCartClick={handleCartClick}
           handleLoginClick={handleLoginClick}
           handleHomeClick={handleHomeClick}
           handleShopClick={handleShopClick}
         />
-        <Subbanner title={"Shopping"} />
+        <Subbanner title={"Shop"} />
         <Filterhorizontal
           handleListpageClick={handleListpageClick}
           handleGridpageClick={handleGridpageClick}
         />
-        <div className="shoppage_gridpage_gridview">
-          <div className="shoppage_gridpage_col_fverticalbar">
+        <div className="shoppage_listpage_col">
+          <div className="shoppage_listpage_col_fverticalbar">
             <FilterBarVertical />
           </div>
-          <div className="shoppage_gridpage_col_listview">
-            <Gridview />
+          <div className="shoppage_listpage_col_listview">
+            <Listview />
           </div>
         </div>
         <BrandList />

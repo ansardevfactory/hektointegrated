@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import grid from "./Images/filterhorizontal_grid_view.png";
 import list from "./Images/filterhorizontal_list.png";
 import "./Filterhorizontal.css";
 
-export default function Filterhorizontal() {
+export default function Filterhorizontal({handleListpageClick,handleGridpageClick}) {
   return (
     <>
       <div className="filterhorizontal">
@@ -31,10 +31,10 @@ export default function Filterhorizontal() {
           <div className="filterhorizontal_col2_row3">
             <label>View:</label>
             <div>
-              <img src={grid} />
+              <img src={grid}  onClick={e=>handleGridpageClick()}/>
             </div>
             <div>
-              <img src={list} />
+              <img src={list} onClick={e=>handleListpageClick()}/>
             </div>
             <input></input>
           </div>

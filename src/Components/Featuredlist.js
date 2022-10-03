@@ -136,7 +136,7 @@ function Singlefeaturedlist({ img ,handleViewDetailsClick}) {
 
   return (
     <>
-      <div className="singlefeatredlist">
+      <div className="singlefeatredlist" onClick={e=>handleViewDetailsClick()}>
         <div className="singlefeatredlist_inner">
           <div className="singlefeatredlist_inner_outer">
             <div className="singlefeatredlist_inner_topimg">

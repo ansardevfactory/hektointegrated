@@ -1,8 +1,19 @@
 .tp-r1 {
   text-align: center;
-  font-size: 33px;
-  color: blue;
+  /* font-size: 33px; */
+  /* color: blue; */
   padding-bottom: 33px;
+}
+
+.tp-r1 label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 650;
+  color: #151875;
+}
+
+.tp-r2 {
+  font-weight: 650;
 }
 
 .tp-dollor {
@@ -11,11 +22,14 @@
 }
 
 .tp-dp {
-  padding-right: 5px;
+  padding-right: 15px;
+  font-size: 0.9rem;
 }
 
 .tp-r3-c3-c177555 {
-  color: blue;
+  color: #151875;
+  font-size: 0.85rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .tp-r2-cantlvr-chair-1 {
@@ -24,7 +38,7 @@
   background-color: rgb(255, 255, 255);
   width: 18%;
   padding-left: 22px;
-  color: blue;
+  color: #151875;
 }
 
 .tp-r2-cantlvr-chair-2 {
@@ -33,7 +47,7 @@
   background-color: rgb(255, 255, 255);
   width: 18%;
   padding-left: 22px;
-  color: blue;
+  color: #151875;
 }
 
 .tp-r2-cantlvr-chair-3 {
@@ -43,8 +57,7 @@
   width: 17%;
   padding-left: 22px;
   padding-right: 71px;
-  color: blue;
-}
+  color: #151875;}
 
 .tp-r2-cantlvr-chair-0 {
   display: flex;
@@ -61,7 +74,8 @@
 }
 
 .tp-ash-lbl {
-  color: rgb(101, 101, 104);
+  color: rgba(21, 24, 117, 0.3);
+  font-size: 0.9rem;
 }
 
 .tp-r2-lbs {
@@ -81,6 +95,9 @@
   display: flex;
   flex-direction: column;
   padding-right: 22px;
+  background-color: #FFF6FB;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+
 }
 
 .tp-r3-c2 {
@@ -95,16 +112,20 @@
 }
 
 .tp-lbs-1 {
-  color: blue;
-  padding-left: 11px;
+  color: #151875; 
+   padding-left: 11px;
   padding-top: 22px;
-  font-size: 22px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
 }
 
 .tp-shopnow {
   color: red;
   padding-left: 14px;
   text-decoration: underline;
+  padding-bottom: 10px;
 }
 
 .tp-r3-clk {
@@ -139,6 +160,9 @@
   display: flex;
   flex-direction: column;
   padding-left: 11px;
+  color: #151875;  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.83rem;
 }
 
 .tp-r3-c3-c1 {
@@ -156,9 +180,4 @@
 .tp-r3-c3-cover {
   padding-left: 22px;
   /* padding-bottom: 35px; */
-}
-
-.tp-r3-lastchair-1 {
-  text-decoration: underline;
-  color: blue;
 }

@@ -20,14 +20,6 @@ export default function Productthumb() {
   return (
     <>
       <div className="productthumb">
-        <div className="productthumb_row1">
-          {/* <label className="productthumb_row1_label1">Product Details</label> */}
-          <h1>Product Details</h1>
-          <label className="productthumb_row1_label2">
-            Home . Page
-            <span>. Product Details</span>
-          </label>
-        </div>
         <div className="productthumb_row2">
           <div className="productthumb_row2_outer">
             <div className="productthumb_row2_outer_col1">

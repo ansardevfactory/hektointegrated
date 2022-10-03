@@ -29,7 +29,7 @@ function InBetweenBanner1() {
                     </div>
                     <div className="InBetweenBanner1_right_button_col2_row3">
                         <div className="InBetweenBanner1_right_leftbutton_col2_row3">
-                            <button>Add to Cart</button>
+                            <button>Add To Cart</button>
                         </div>
                         <div className="InBetweenBanner1_right_right_textbutton_col2_row3">
                             <label className="InBetweenBanner1_right_right_textbutton_col2_row3_label1">B&B Italian Sofa</label>

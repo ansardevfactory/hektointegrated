@@ -15,7 +15,7 @@ function TrendingProducts({handleShoppageClick}) {
       </div>
 
       <div className="tp-r2">
-        <div className="tp-r2-cantlvr-chair-11">
+        <div className="tp-r2-cantlvr-chair-11" onClick={e=>handleShoppageClick()}>
           <div>
             <img src={fst} />{" "}
           </div>
@@ -26,13 +26,13 @@ function TrendingProducts({handleShoppageClick}) {
             <div className="tp-dollor">
               <label className="tp-dp">$26.00</label>
               <div className="tp-ash-lbl">
-                <label>$26.00</label>
+                <s>$26.00</s>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="tp-r2-cantlvr-chair-1">
+        <div className="tp-r2-cantlvr-chair-1" onClick={e=>handleShoppageClick()}>
           <div>
             <img src={logo} />{" "}
           </div>
@@ -43,13 +43,13 @@ function TrendingProducts({handleShoppageClick}) {
             <div className="tp-dollor">
               <label className="tp-dp">$26.00</label>
               <div className="tp-ash-lbl">
-                <label>$26.00</label>
+              <s>$26.00</s>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="tp-r2-cantlvr-chair-2">
+        <div className="tp-r2-cantlvr-chair-2" onClick={e=>handleShoppageClick()}>
           <div>
             <img src={thrd} />{" "}
           </div>
@@ -60,13 +60,13 @@ function TrendingProducts({handleShoppageClick}) {
             <div className="tp-dollor">
               <label className="tp-dp">$26.00</label>
               <div className="tp-ash-lbl">
-                <label>$26.00</label>
+              <s>$26.00</s>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="tp-r2-cantlvr-chair-3">
+        <div className="tp-r2-cantlvr-chair-3"onClick={e=>handleShoppageClick()}>
           <div>
             <img src={bc} />{" "}
           </div>
@@ -77,7 +77,7 @@ function TrendingProducts({handleShoppageClick}) {
             <div className="tp-dollor">
               <label className="tp-dp">$26.00</label>
               <div className="tp-ash-lbl">
-                <label>$26.00</label>
+              <s>$26.00</s>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ function TrendingProducts({handleShoppageClick}) {
 
             <div className="tp-r3-lastchair-1">
               <label>Exicutive Seat chair</label>
-              <label>$32.00</label>
+            <s>$32.00</s>
             </div>
           </div>
 
@@ -120,7 +120,7 @@ function TrendingProducts({handleShoppageClick}) {
 
             <div className="tp-r3-lastchair-1">
               <label>Exicutive Seat chair</label>
-              <label>$32.00</label>
+              <s>$32.00</s>
             </div>
           </div>
 
@@ -131,7 +131,7 @@ function TrendingProducts({handleShoppageClick}) {
 
             <div className="tp-r3-lastchair-1">
               <label>Exicutive Seat chair</label>
-              <label>$32.00</label>
+              <s>$32.00</s>
             </div>
           </div>
         </div>
@@ -141,3 +141,4 @@ function TrendingProducts({handleShoppageClick}) {
 }
 
 export default TrendingProducts;
+

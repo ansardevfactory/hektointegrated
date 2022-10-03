@@ -14,6 +14,11 @@
   padding-left: 0%;
 }
 
+.featurelist_outer h1{
+  color: #1A0B5B;
+  /* font-size: 2rem; */
+}
+
 .featuredlist_outer_inner {
   /* width: 70%; */
   display: flex;
