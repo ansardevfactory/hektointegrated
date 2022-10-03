@@ -4,7 +4,7 @@ import chair3 from "./Images/topcategories_chair3.png";
 import chair4 from "./Images/topcategories_chair4.png";
 import slideimage from "./Images/topcategories_slideimage.png";
 import "./Topcategories.css";
-export default function Topcategories() {
+export default function Topcategories({handleShoppageClick}) {
     return (
         <>
             <div className="Topcategories">
@@ -12,10 +12,10 @@ export default function Topcategories() {
                     <label>Top Categories</label>
                 </div>
                 <div className="Topcategories_cont">
-                    <Topcategories_list image={chair1}></Topcategories_list>
-                    <Topcategories_list image={chair2}></Topcategories_list>
-                    <Topcategories_list image={chair3}></Topcategories_list>
-                    <Topcategories_list image={chair4}></Topcategories_list>
+                    <Topcategories_list image={chair1} handleShoppageClick={handleShoppageClick}></Topcategories_list>
+                    <Topcategories_list image={chair2} handleShoppageClick={handleShoppageClick}></Topcategories_list>
+                    <Topcategories_list image={chair3} handleShoppageClick={handleShoppageClick}></Topcategories_list>
+                    <Topcategories_list image={chair4} handleShoppageClick={handleShoppageClick}></Topcategories_list>
                 </div>
                 <div className="Topcategories_footer">
                     <img src={slideimage}></img>
@@ -25,14 +25,14 @@ export default function Topcategories() {
     )
 }
 // to display similiar component
-function Topcategories_list({ image }) {
+function Topcategories_list({ image,handleShoppageClick }) {
     return (
         <>
             <div className="Topcategories_list">
                 <div className="Topcategories_list_img">
                     {/* assigning images to a variable */}
                     <img src={image}></img>
-                    <button className="Topcategories_list_img_button">View Shop</button>
+                    <button className="Topcategories_list_img_button" onClick={e=>handleShoppageClick()}>View Shop</button>
                 </div>
                 <div className="Topcategories_list_label">
                     <label className="Topcategories_list_label_l1">Mini LCW Chair</label>

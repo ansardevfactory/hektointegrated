@@ -4,7 +4,7 @@ import bag3 from "./Images/checkout_bag3.png";
 import bag4 from "./Images/checkout_bag4.png";
 import bag5 from "./Images/checkout_bag5.png";
 import "./Checkout.css"
-export default function Checkout() {
+export default function Checkout({handleShippingdetailsClick}) {
     return (
         <>
             <div className="checkout">
@@ -68,7 +68,7 @@ export default function Checkout() {
                                 <label>Shipping & taxes calculated at checkout</label>
                             </div>
                             <div className="checkout_left_total_body_button">
-                                <button type="button" class="block">Proceed To Checkout</button>
+                                <button type="button" class="block" onClick={e=>{handleShippingdetailsClick()}}>Proceed To Checkout</button>
                             </div>
                         </div>
                     </div>

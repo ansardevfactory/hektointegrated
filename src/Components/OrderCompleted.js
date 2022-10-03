@@ -5,7 +5,7 @@ import OrderCompleted_Vector17 from './Images/OrderCompleted_Vector17.png'
 // import OrderCompleted_Vector16 from './Images/OrderCompleted_Vector16.png';
 // import OrderCompleted_Vector15 from './Images/OrderCompleted_Vector15.png';
 
-function OrderCompleted() {
+function OrderCompleted({handleShopClick}) {
     return (
 
         <div className="OrderCompleted_outer">
@@ -49,7 +49,7 @@ function OrderCompleted() {
 
                             </div>
                             <div className="OrderCompleted_cont_col2_row4">
-                                <button>Continue Shopping</button>
+                                <button onClick={e=>handleShopClick()}>Continue Shopping</button>
                             </div>
                            
                         </div>

@@ -4,7 +4,7 @@ import fb from "./Images/footer_facebook.png";
 import cam from "./Images/footer_camscan.png";
 import twit from "./Images/footer_twitter.png";
 
-export default function App() {
+export default function Footer({handleSignupClick,handleOrderDetailPageClick,handleProfilePageClick,handleOrderListClick}) {
   return (
     <>
       <div className="footer">
@@ -14,7 +14,7 @@ export default function App() {
               <h1>Hekto</h1>
               <div className="footer_row1_col1_input">
                 <input placeholder="Enter Email Address"></input>
-                <button>Sign Up</button>
+                <button onClick={e=>handleSignupClick()}>Sign Up</button>
               </div>
               <label>Contact Info</label>
               <label>
@@ -31,11 +31,11 @@ export default function App() {
             </div>
             <div className="footer_row1_col2">
               <h3>Customer Care</h3>
-              <label>My Account</label>
+              <label onClick={e=>handleProfilePageClick()}>My Account</label>
               <label>Discount</label>
               <label>Returns</label>
-              <label>Orders History</label>
-              <label>Order Tracking</label>
+              <label onClick={e=>handleOrderListClick()}>Orders History</label>
+              <label onClick={e=>handleOrderDetailPageClick()}>Order Tracking</label>
             </div>
             <div className="footer_row1_col2">
               <h3>Pages</h3>

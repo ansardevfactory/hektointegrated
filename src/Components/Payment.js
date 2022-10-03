@@ -1,7 +1,7 @@
 import React from "react";
 import "./Payment.css";
 
-export default function Payment() {
+export default function Payment({handleordercompletedpageClick}) {
   return (
     <>
       <div className="payment">
@@ -57,7 +57,7 @@ export default function Payment() {
               </div>
             </div>
             <div className="payment_outer_inner_button">
-              <button> Make Payment</button>
+              <button onClick={e=>handleordercompletedpageClick()}> Make Payment</button>
             </div>
           </div>
         </div>

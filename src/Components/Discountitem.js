@@ -2,7 +2,7 @@ import "./Discountitem.css"
 import Discountitem_tickmark from "./Images/Discountitem_tickmark.png"
 import Discountitem_chair1 from "./Images/Discountitem_chair1.png"
 
-function Discountitem() {
+function Discountitem({handleShoppageClick}) {
     return <>
 
         <div className="Discountitem_row1">
@@ -58,7 +58,7 @@ function Discountitem() {
 
                 </div>
                 <div className="Discountitem_row2_col1_l5">
-                    <button> Shop Now</button>
+                    <button onClick={e=>handleShoppageClick()}> Shop Now</button>
                 </div>
             </div>
             <div className="Discountitem_row2_col2">

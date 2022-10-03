@@ -5,7 +5,7 @@ import Header_user from "./Images/Header_user.png";
 import Header_heart from "./Images/Header_heart.png";
 import Header_cart from "./Images/Header_cart.png";
 import Header_searchlens from "./Images/Header_searchlens.png";
-function Header({handleCartClick}) {
+function Header({handleCartClick,handleLoginClick,handleHomeClick,handleShopClick}) {
   return (
     <>
       <div className="Header_r1">
@@ -47,7 +47,7 @@ function Header({handleCartClick}) {
           </div>
           <div className="Header_r1_right_3">
             <div className="Header_r1_right_login">
-              <button> Log In</button>
+              <button onClick={e=>handleLoginClick()}> Log In</button>
             </div>
 
             <div className="Header_r1_right_3_img">
@@ -72,15 +72,16 @@ function Header({handleCartClick}) {
           <label> Hekto</label>
         </div>
         <div className="Header_r2_col2">
-          <select>
-            <option> Home</option>
+          {/* <select>
+            <option > Home</option>
             <option> A</option>
             <option> B</option>
-          </select>
+          </select> */}
+          <button onClick={e=>handleHomeClick()}>Home</button>
           <button> Pages </button>
           <button>Products </button>
           <button> Blog </button>
-          <button>Shop </button>
+          <button onClick={e=>handleShopClick()}>Shop </button>
           <button>Contact </button>
         </div>
         <div className="Header_r2_col3">

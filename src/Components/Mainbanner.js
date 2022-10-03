@@ -2,7 +2,7 @@ import light from "./Images/mainbanner_light.png";
 import armchair from "./Images/mainbanner_armchair.png";
 import pagination from "./Images/mainbanner_paginationicon.png";
 import "./Mainbanner.css";
-export default function Mainbanner() {
+export default function Mainbanner({handleShoppageClick}) {
     return (
         <>
             <div className="Mainbanner">
@@ -27,7 +27,7 @@ export default function Mainbanner() {
                             <label>in phasellus non in justo.</label>
                         </div>
                         <div className="Mainbanner_main_center_button">
-                            <button>Shop Now</button>
+                            <button onClick={e=>handleShoppageClick()}>Shop Now</button>
                         </div>
                     </div>
                     <div className="Mainbanner_main_right">

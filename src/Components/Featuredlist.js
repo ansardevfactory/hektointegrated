@@ -61,7 +61,7 @@ const cards = {
   },
 };
 
-export default function Slider() {
+export default function Slider({handleViewDetailsClick}) {
   const [pageNumber, setPageNumber] = useState(0);
   let itemPerpage = 4;
   // let currentPage=0;
@@ -76,7 +76,7 @@ export default function Slider() {
     .map((item) => {
       return (
         <div key={item}>
-          <Singlefeaturedlist img={cards[item]["image"]} />
+          <Singlefeaturedlist img={cards[item]["image"]} handleViewDetailsClick={handleViewDetailsClick}/>
         </div>
       );
     });
@@ -114,7 +114,7 @@ export default function Slider() {
   );
 }
 
-function Singlefeaturedlist({ img }) {
+function Singlefeaturedlist({ img ,handleViewDetailsClick}) {
   const [stylecart, setStyleCart] = useState(
     "singlefeatredlist_inner_topimg_1"
   );
@@ -167,7 +167,7 @@ function Singlefeaturedlist({ img }) {
             <img src={img} height={155} />
           </div>
           <div className="singlefeatredlist_inner_button">
-            <button>View Details</button>
+            <button onClick={e=>handleViewDetailsClick()}>View Details</button>
           </div>
         </div>
         <h4>Cantilever chair</h4>

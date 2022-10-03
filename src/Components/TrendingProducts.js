@@ -7,7 +7,7 @@ import dd from "./Images/TrendingProducts-dd.png";
 import plac from "./Images/TrendingProducts-plac.png";
 import "./TrendingProducts.css";
 
-function TrendingProducts() {
+function TrendingProducts({handleShoppageClick}) {
   return (
     <div className="trending-product-outer-cover">
       <div className="tp-r1">
@@ -87,7 +87,7 @@ function TrendingProducts() {
       <div className="tp-r3-cover">
         <div className="tp-r3-c1">
           <label className="tp-lbs-1">23% off all product</label>
-          <label className="tp-shopnow">shop now</label>
+          <label className="tp-shopnow" onClick={e=>handleShoppageClick()}>shop now</label>
           <div className="tp-r3-clk">
             <img src={clk} />{" "}
           </div>
