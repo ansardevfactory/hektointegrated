@@ -9,7 +9,7 @@ import Ordercompletedpage from './Page/Ordercompletedpage';
 import Orderdetailpage from './Page/Orderdetailpage';
 import Orderlistpage from './Page/Orderlistpage';
 import Paymentpage from './Page/Paymentpage';
-//  import Profilepage from './Page/Profilepage';
+ import Profilepage from './Page/Profilepage';
 import Shoppage from './Page/Shoppage';
 import Singleproductpage from './Page/Singleproductpage';
 
@@ -25,7 +25,7 @@ export default function Navigation() {
             <Route path='/orderdetailpage' element={<Orderdetailpage/>}></Route>
             <Route path='/orderlistpage' element={<Orderlistpage/>}></Route>
             <Route path='/paymentpage' element={<Paymentpage/>}></Route>
-            {/* <Route path='/profilepage' element={<Profilepage/>}></Route> */}
+            <Route path='/profilepage' element={<Profilepage/>}></Route>
             <Route path='/Shoppage' element={<Shoppage/>}></Route>
             <Route path='/singleproductpage' element={<Singleproductpage/>}></Route>
         </Routes>
