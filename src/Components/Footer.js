@@ -11,7 +11,7 @@ export default function Footer({handleSignupClick,handleOrderDetailPageClick,han
         <div className="footer_row1">
           <div className="fooer_row1_row1">
             <div className="footer_row1_col1">
-              <h1>Hekto</h1>
+              <h1>Logo</h1>
               <div className="footer_row1_col1_input">
                 <input placeholder="Enter Email Address"></input>
                 <button onClick={e=>handleSignupClick()}>Sign Up</button>
