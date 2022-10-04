@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import "./Profilepage.css";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Subbanner from "../Components/Subbanner";
 import Profileedit from "../Components/Profileedit";
+import Profileproduct from "../Components/Profileproduct";
 export default function Profilepage() {
   const navigate = useNavigate();
   const handleCartClick = () => {
@@ -31,22 +33,29 @@ export default function Profilepage() {
   };
   return (
     <>
-      <Header
-        handleCartClick={handleCartClick}
-        handleLoginClick={handleLoginClick}
-        handleHomeClick={handleHomeClick}
-        handleShopClick={handleShopClick}
-      />
-      {/* <Subbanner /> */}
-      <div className="componentprofileedit">
-        <Profileedit />
+      <div className="profilepage">
+        <Header
+          handleCartClick={handleCartClick}
+          handleLoginClick={handleLoginClick}
+          handleHomeClick={handleHomeClick}
+          handleShopClick={handleShopClick}
+        />
+        <Subbanner />
+        <div className="profilepage_row">
+          <div className="profilepage_row_col1">
+            <Profileedit />
+          </div>
+          <div className="profilepage_row_col2">
+            <Profileproduct />
+          </div>
+        </div>
+        <Footer
+          handleSignupClick={handleSignupClick}
+          handleProfilePageClick={handleProfilePageClick}
+          handleOrderListClick={handleOrderListClick}
+          handleOrderDetailPageClick={handleOrderDetailPageClick}
+        />
       </div>
-      <Footer
-        handleSignupClick={handleSignupClick}
-        handleProfilePageClick={handleProfilePageClick}
-        handleOrderListClick={handleOrderListClick}
-        handleOrderDetailPageClick={handleOrderDetailPageClick}
-      />
     </>
   );
 }

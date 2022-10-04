@@ -1,39 +1,66 @@
-.profileedit_row2 {
-    display: flex;
-    flex-direction: column;
-    display: grid;
-    gap: 20px;
-    /* border-bottom: 2px solid #8C9BD1; */
-    width: 50%;
-}
-
-.profileedit_row1_label {
-    padding-left: 17%;
-}
-
 .profileedit {
     display: flex;
     flex-direction: column;
-    border: none;
-    outline: none;
-    background: #FFFFFF;
-    /* padding: 70px 0; */
+    /* background: #FFFFFF; */
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
     gap: 20px;
-    /* align-items: center; */
-    font-family: 'Lato';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: .9rem;
     line-height: 17px;
-    padding-left: 30%;
-    padding-top: 50px;
+   justify-content: center;
+   margin-left: 20%;
+    padding-top: 20px;
     padding-bottom: 50px;
     color: #C1C8E1;
-
+    margin-top: 20px;
 }
+
+
+.profileedit_outer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* justify-content: center; */
+    background-color: #F8F8FD;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 3px;
+}
+
+.profileedit_row1_img{
+    justify-content: center;
+    display: flex;
+    /* background-color: #1D3178; */
+    /* width: 60%; */
+    padding-bottom: 50px;
+}
+
+.profileedit_row1{
+    display: flex;
+    flex-direction: column;
+    /* width: 60%; */
+}
+
+.profileedit_row2 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    display: grid;
+    gap: 20px;
+    /* border-bottom: 2px solid #8C9BD1; */
+    width: 100%;
+}
+
+/* .profileedit_row1_label {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: gray;
+} */
+
 
 .profileedit_row2_row1 {
     display: flex;
@@ -47,12 +74,16 @@
 .profileedit_row2_row4_col2 {
     width: 50%;
     border-bottom: 2px solid #8C9BD1;
+    margin-bottom: 10px;
 }
 
 
 .profileedit_row2_row3,
 .profileedit_row2_row2 {
     border-bottom: 2px solid #8C9BD1;
+    margin-bottom: 10px;
+    width: 100%;
+
 }
 
 .profileedit_row2_row4 {
@@ -61,7 +92,7 @@
 }
 
 .profileedit_row1_label {
-    Font-family: "segoe ui";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -69,8 +100,10 @@
     font-weight: 700;
     color: #1D3178;
     /* padding-right: 63px; */
-    width: 50%;
-    padding-bottom: 15px;
+    /* width: 60; */
+    justify-content: center;
+    display: flex;
+    padding-bottom: 40px;
 }
 
 .profileedit_row3 button {
@@ -78,7 +111,7 @@
     border-radius: 2px;
     border: none;
     outline: none;
-    Font-family: "segoe ui";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -92,12 +125,16 @@
 
 .profileedit_row3 {
     padding-top: 20px;
-    padding-left: 18%;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+    /* padding-left: 18%; */
 }
 
 .profileedit_row2 label {
     padding: 10px;
 }
+
 
 /* .profileedit_row2,.profileedit_row3{
     border-bottom: 2px solid #8C9BD1;
