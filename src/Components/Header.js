@@ -5,7 +5,16 @@ import Header_user from "./Images/Header_user.png";
 import Header_heart from "./Images/Header_heart.png";
 import Header_cart from "./Images/Header_cart.png";
 import Header_searchlens from "./Images/Header_searchlens.png";
-function Header({handleCartClick,handleLoginClick,handleHomeClick,handleShopClick}) {
+import header_cartmob from "./Images/header_cartmob.png";
+import header_menumob from "./Images/header_menumob.png";
+import header_usermob from "./Images/header_usermob.png";
+import header_wishlistmob from "./Images/header_wishlistmob.png";
+function Header({
+  handleCartClick,
+  handleLoginClick,
+  handleHomeClick,
+  handleShopClick,
+}) {
   return (
     <>
       <div className="Header_r1">
@@ -47,7 +56,7 @@ function Header({handleCartClick,handleLoginClick,handleHomeClick,handleShopClic
           </div>
           <div className="Header_r1_right_3">
             <div className="Header_r1_right_login">
-              <button onClick={e=>handleLoginClick()}> Log In</button>
+              <button onClick={(e) => handleLoginClick()}> Log In</button>
             </div>
 
             <div className="Header_r1_right_3_img">
@@ -63,13 +72,19 @@ function Header({handleCartClick,handleLoginClick,handleHomeClick,handleShopClic
             </div>
           </div>
           <div className="Header_r1_right_5">
-            <img onClick={e=>handleCartClick()} src={Header_cart} />
+            <img onClick={(e) => handleCartClick()} src={Header_cart} />
           </div>
         </div>
       </div>
       <div className="Header_r2">
         <div className="Header_r2_col1">
+          <img src={header_menumob} className="header_mobview" />
           <label> Logo</label>
+          <div>
+            <img src={header_usermob} className="header_mobview" />
+            <img src={header_wishlistmob} className="header_mobview" />
+            <img src={header_cartmob} className="header_mobview" />
+          </div>
         </div>
         <div className="Header_r2_col2">
           {/* <select>
@@ -77,11 +92,11 @@ function Header({handleCartClick,handleLoginClick,handleHomeClick,handleShopClic
             <option> A</option>
             <option> B</option>
           </select> */}
-          <button onClick={e=>handleHomeClick()}>Home</button>
+          <button onClick={(e) => handleHomeClick()}>Home</button>
           <button> Pages </button>
           <button>Products </button>
           <button> Blog </button>
-          <button onClick={e=>handleShopClick()}>Shop </button>
+          <button onClick={(e) => handleShopClick()}>Shop </button>
           <button>Contact </button>
         </div>
         <div className="Header_r2_col3">
