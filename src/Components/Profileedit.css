@@ -35,7 +35,18 @@
     display: flex;
     /* background-color: #1D3178; */
     /* width: 60%; */
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profileedit_row1_img_circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgba(110, 48, 48, 0.696);
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .profileedit_row1{
@@ -73,14 +84,14 @@
 .profileedit_row2_row4_col1,
 .profileedit_row2_row4_col2 {
     width: 50%;
-    border-bottom: 2px solid #8C9BD1;
+    border-bottom: 1px solid #C1C8E1;
     margin-bottom: 10px;
 }
 
 
 .profileedit_row2_row3,
 .profileedit_row2_row2 {
-    border-bottom: 2px solid #8C9BD1;
+    border-bottom: 1px solid #C1C8E1;
     margin-bottom: 10px;
     width: 100%;
 
@@ -103,7 +114,7 @@
     /* width: 60; */
     justify-content: center;
     display: flex;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .profileedit_row3 button {
@@ -114,9 +125,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 10px;
+    font-size: 1rem;
+    /* line-height: 16px; */
+    padding: 10px 20px;
     color: #FFFFFF;
     width: 100px;
     height: 44.06px;
@@ -124,10 +135,11 @@
 }
 
 .profileedit_row3 {
-    padding-top: 20px;
+    padding-top: 40px;
     justify-content: center;
     display: flex;
     padding-bottom: 10px;
+    background-color: aquamarine;
     /* padding-left: 18%; */
 }
 
@@ -140,3 +152,20 @@
     border-bottom: 2px solid #8C9BD1;
     padding-bottom: 10px;
 } */
+
+.profileedit_row2_row1_col1 input,
+.profileedit_row2_row1_col2 input,
+.profileedit_row2_row2 input,
+.profileedit_row2_row3 input,
+.profileedit_row2_row4_col1 input,
+.profileedit_row2_row4_col2 input{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    background-color:#F8F8FD ;
+}
+
+.profileedit ::placeholder{
+    color: #C1C8E1;
+}
