@@ -40,7 +40,7 @@ export default function Profilepage() {
           handleHomeClick={handleHomeClick}
           handleShopClick={handleShopClick}
         />
-        <Subbanner />
+        <Subbanner title={"My Account"}/>
         <div className="profilepage_row">
           <div className="profilepage_row_col1">
             <Profileedit />
