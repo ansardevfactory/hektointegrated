@@ -1,6 +1,7 @@
 import React from "react";
 // import { FaUserCircle } from "react-icons/fa";
 import "./Profileedit.css";
+import { BsFillCameraFill } from "react-icons/bs";
 export default function Profileedit() {
   return (
     <>
@@ -9,8 +10,11 @@ export default function Profileedit() {
           <div className="profileedit_row1">
             <div className="profileedit_row1_img">
               <div className="profileedit_row1_img_circle">
-              {/* <FaUserCircle style={{ fontSize: "150" }} /> */}
-              <h1>A</h1>
+                {/* <FaUserCircle style={{ fontSize: "150" }} /> */}
+                <h1>A</h1>
+                <div className="profileedit_row1_img_circle_camera">
+                  <BsFillCameraFill />
+                </div>
               </div>
             </div>
             <div className="profileedit_row1_label">
@@ -20,7 +24,7 @@ export default function Profileedit() {
           <div className="profileedit_row2">
             <div className="profileedit_row2_row1">
               <div className="profileedit_row2_row1_col1">
-                <input placeholder="First name" ></input>
+                <input placeholder="First name"></input>
               </div>
               <div className="profileedit_row2_row1_col2">
                 <input placeholder="Last name"></input>
