@@ -79,3 +79,17 @@
     display: flex;
     justify-content: center;
 }
+
+ 
+@media only screen and (max-width: 500px) {
+    .Mainbanner_main{
+        flex-direction: column;
+    }
+    .Mainbanner_main_center{
+        margin-left: 10px;
+    }
+    .Mainbanner_main_right,.Mainbanner_main_right_image1 img{
+        max-width: 100%;
+        height: auto;
+    }
+}
