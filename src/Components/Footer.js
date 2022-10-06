@@ -4,62 +4,47 @@ import fb from "./Images/footer_facebook.png";
 import cam from "./Images/footer_camscan.png";
 import twit from "./Images/footer_twitter.png";
 
-export default function Footer({
-  handleSignupClick,
-  handleOrderDetailPageClick,
-  handleProfilePageClick,
-  handleOrderListClick,
-}) {
+export default function Footer({handleSignupClick,handleOrderDetailPageClick,handleProfilePageClick,handleOrderListClick}) {
   return (
     <>
       <div className="footer">
         <div className="footer_row1">
           <div className="fooer_row1_row1">
-            <div className="fooer_row1_row1_innerrow1">
-              <div className="footer_row1_col1">
-                <h1>Logo</h1>
-                <div className="footer_row1_col1_input">
-                  <input placeholder="Enter Email Address"></input>
-                  <button onClick={(e) => handleSignupClick()}>Sign Up</button>
-                </div>
-                <label>Contact Info</label>
-                <label>
-                  17 Princess Road, London, Greater London NW1 8JR, UK
-                </label>
+            <div className="footer_row1_col1">
+              <h1>Logo</h1>
+              <div className="footer_row1_col1_input">
+                <input placeholder="Enter Email Address"></input>
+                <button onClick={e=>handleSignupClick()}>Sign Up</button>
               </div>
-              <div className="footer_row1_col2">
-                <h3>Catagories</h3>
-                <label>Laptops & Computers</label>
-                <label>Cameras & Photography</label>
-                <label>Smart Phones & Tablets</label>
-                <label>Video Games & Consoles</label>
-                <label>Waterproof Headphones</label>
-              </div>
+              <label>Contact Info</label>
+              <label>
+                17 Princess Road, London, Greater London NW1 8JR, UK
+              </label>
             </div>
-            <div className="fooer_row1_row1_innerrow2">
-              <div className="footer_row1_col3">
-                <h3>Customer Care</h3>
-                <label onClick={(e) => handleProfilePageClick()}>
-                  My Account
-                </label>
-                <label>Discount</label>
-                <label>Returns</label>
-                <label onClick={(e) => handleOrderListClick()}>
-                  Orders History
-                </label>
-                <label onClick={(e) => handleOrderDetailPageClick()}>
-                  Order Tracking
-                </label>
-              </div>
-              <div className="footer_row1_col3">
-                <h3>Pages</h3>
-                <label>Blog</label>
-                <label>Browse the Shop</label>
-                <label>Category</label>
-                <label>Pre-Built Pages</label>
-                <label>Visual Composer Elements</label>
-                <label>WooCommerce Pages</label>
-              </div>
+            <div className="footer_row1_col2">
+              <h3>Catagories</h3>
+              <label>Laptops & Computers</label>
+              <label>Cameras & Photography</label>
+              <label>Smart Phones & Tablets</label>
+              <label>Video Games & Consoles</label>
+              <label>Waterproof Headphones</label>
+            </div>
+            <div className="footer_row1_col2">
+              <h3>Customer Care</h3>
+              <label onClick={e=>handleProfilePageClick()}>My Account</label>
+              <label>Discount</label>
+              <label>Returns</label>
+              <label onClick={e=>handleOrderListClick()}>Orders History</label>
+              <label onClick={e=>handleOrderDetailPageClick()}>Order Tracking</label>
+            </div>
+            <div className="footer_row1_col2">
+              <h3>Pages</h3>
+              <label>Blog</label>
+              <label>Browse the Shop</label>
+              <label>Category</label>
+              <label>Pre-Built Pages</label>
+              <label>Visual Composer Elements</label>
+              <label>WooCommerce Pages</label>
             </div>
           </div>
         </div>

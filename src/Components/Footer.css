@@ -22,35 +22,13 @@
   /* background-color: blue; */
 }
 
-.fooer_row1_row1_innerrow1 {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  /* background-color: #e7e4f8; */
-  /* justify-content: space-between; */
-}
-
-.fooer_row1_row1_innerrow2 {
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-  /* background-color: gold; */
-}
-
 .footer_row1_col1 {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 37%;
   /* background-color: yellow; */
   margin: 2px;
   padding: 10px;
-}
-
-.footer_row1_col3 {
-  width: 50%;
-  display: flex;
-  /* background-color: #fb2e86; */
-  /* justify-content: space-between; */
 }
 
 .footer_row1_col1 h1 {
@@ -58,17 +36,15 @@
   font-size: 2.5rem;
 }
 
-.footer_row1_col2 h3,
-.footer_row1_col3 h3 {
+.footer_row1_col2 h3 {
   padding-bottom: 10px;
   font-size: 1.2rem;
 }
 
 .footer_row1_col1 label,
-.footer_row1_col2 label,
-.footer_row1_col3 label {
+.footer_row1_col2 label {
   font-size: 1rem;
-  color: #8a8fb9;
+  color: #8A8FB9;
 }
 
 .footer_row1_col1_input {
@@ -84,7 +60,7 @@
   border: none;
   font-size: 00.8rem;
   outline: none;
-  color: #8a8fb9;
+  color: #8A8FB9;
 }
 
 .footer_row1_col1_input button {
@@ -98,17 +74,15 @@
 }
 
 .footer_row1_col1 label,
-.footer_row1_col2 label,
-.footer_row1_col3 label {
+.footer_row1_col2 label {
   padding-bottom: 10px;
   font-size: 0.8rem;
 }
 
-.footer_row1_col2,
-.footer_row1_col3 {
+.footer_row1_col2 {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 21%;
   /* background-color: yellow; */
   margin: 2px;
   padding: 10px;
@@ -151,24 +125,12 @@
 /******************************************************************/
 /**************************footer page end************************/
 /*****************************************************************/
+@media only screen and (max-width: 500px) {
+ .fooer_row1_row1{
+  display: block;
+ }
+ .footer_row2{
+  display: block;
+ }
 
-/* @media only screen and (max-width: 500px) {
-  .fooer_row1_row1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer_row1_col1 {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-  }
-  .footer_row1_col1_input input {
-    width: 80px;
-    padding: 10.5px;
-    border-radius: 3px;
-    border: none;
-    font-size: 00.8rem;
-    outline: none;
-    color: #8a8fb9;
-  }
-} */
+}
