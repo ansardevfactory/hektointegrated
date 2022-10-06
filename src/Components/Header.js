@@ -5,16 +5,21 @@ import Header_user from "./Images/Header_user.png";
 import Header_heart from "./Images/Header_heart.png";
 import Header_cart from "./Images/Header_cart.png";
 import Header_searchlens from "./Images/Header_searchlens.png";
-import header_cartmob from "./Images/header_cartmob.png";
+// import header_cartmob from "./Images/header_cartmob.png";
 import header_menumob from "./Images/header_menumob.png";
-import header_usermob from "./Images/header_usermob.png";
-import header_wishlistmob from "./Images/header_wishlistmob.png";
+import { useState } from "react";
+// import header_usermob from "./Images/header_usermob.png";
+// import header_wishlistmob from "./Images/header_wishlistmob.png";
 function Header({
   handleCartClick,
   handleLoginClick,
   handleHomeClick,
   handleShopClick,
 }) {
+  const [style,setStyle]=useState("headermenu");
+  const handleMenuClick=()=>{
+    setStyle("Header_r2_col2_outer")
+  }
   return (
     <>
       <div className="Header_r1">
@@ -78,33 +83,39 @@ function Header({
       </div>
       <div className="Header_r2">
         <div className="Header_r2_col1">
-          <img src={header_menumob} className="header_mobview" />
+          <img src={header_menumob} className="header_mobview1" 
+          onClick={e=>handleMenuClick()}
+          />
           <label> Logo</label>
           <div>
-            <img src={header_usermob} className="header_mobview" />
-            <img src={header_wishlistmob} className="header_mobview" />
-            <img src={header_cartmob} className="header_mobview" />
+            <img src={Header_user} className="header_mobview" />
+            <img src={Header_heart} className="header_mobview" />
+            <img src={Header_cart} className="header_mobview" />
           </div>
         </div>
-        <div className="Header_r2_col2">
-          {/* <select>
+        <div className={style}>
+          <div className="Header_r2_col2_outer">
+            <div className="Header_r2_col2">
+              {/* <select>
             <option > Home</option>
             <option> A</option>
             <option> B</option>
           </select> */}
-          <button onClick={(e) => handleHomeClick()}>Home</button>
-          <button> Pages </button>
-          <button>Products </button>
-          <button> Blog </button>
-          <button onClick={(e) => handleShopClick()}>Shop </button>
-          <button>Contact </button>
-        </div>
-        <div className="Header_r2_col3">
-          <input type="text" />
-          <button>
-            {" "}
-            <img src={Header_searchlens} />
-          </button>
+              <button onClick={(e) => handleHomeClick()}>Home</button>
+              <button> Pages </button>
+              <button>Products </button>
+              <button> Blog </button>
+              <button onClick={(e) => handleShopClick()}>Shop </button>
+              <button>Contact </button>
+            </div>
+            <div className="Header_r2_col3">
+              <input type="text" />
+              <button>
+                {" "}
+                <img src={Header_searchlens} />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>

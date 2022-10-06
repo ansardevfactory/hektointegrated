@@ -16,7 +16,7 @@
     padding-top: 53px;
     padding-bottom: 113px;
     /* padding-left: 122px; */
-    padding-right: 1111px;
+    /* padding-right: 1111px; */
     font-size: 22px;
 }
 
@@ -36,6 +36,7 @@
 .orderlist-lbl-orderplacedon{
     display: flex;
     flex-direction: row;
+    /* width: 60%; */
 }
 
 .ordelist-76473{
@@ -43,14 +44,21 @@
 }
 
 .orderlist-326fwe6we6{
-    padding-right: 42px;
+
+    /* padding-right: 42px; */
     /* background-color: blue; */
+}
+
+.orderlist-326fwe6we6_lab2{
+
 }
 
 .orderlist-col-2-lbl-pack{
     /* background-color: rgb(240, 240, 247); */
     padding-left: 22px;
-    padding-right: 224px;
+    /* padding-right: 224px; */
+    width: 60%;
+    background-color: yellow;
    
 }
 
@@ -73,4 +81,32 @@ color: blue;
 
 .orderlist-26b-rdehd{
     color: blue;
+}
+
+/***************************************/
+
+@media only screen and (max-width: 500px) {
+    .Orderlist_outer-cover{
+        margin:20px 0;
+        padding: 0;
+    }
+    .orderlist-row-2-img-lbl-cover{
+        padding: 0;
+        margin-top: 20px;
+        /* background-color: yellow; */
+    }
+    .orderlist-col-1-img img{
+        max-width: 150px;
+    }
+    .orderlist-lbl-orderplacedon{
+        /* width: 50%; */
+    }
+    /* .orderlist-326fwe6we6{
+        padding: 0;
+        padding-top: 20px;
+        width: 10%;
+    }
+    .orderlist-326fwe6we6_lab2{
+        width: 0%;
+    } */
 }

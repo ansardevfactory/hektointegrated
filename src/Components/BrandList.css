@@ -14,11 +14,13 @@
 
 }
 
+/**********************************/
+
 @media only screen and (max-width: 500px) {
     .BrandList_image img{
-        width: 458px;
-       
+        max-width: 500px;
     }
-
-
+    .BrandList_image{
+        padding-bottom: 20px;
+    }
 }

@@ -9,27 +9,27 @@ export default function Shippingaddress({handlePaymentpageClick}) {
                 <div className="shippingaddress_body">
                     <div className="shippingaddress_body_name">
                         <div className="shippingaddress_body_name_first">
-                            <label>First name (optional)</label>
+                            <input placeholder="First name (optional)"></input>
                         </div>
                         <div className="shippingaddress_body_name_last">
-                            <label>Last name</label>
+                            <input placeholder="Last name"></input>
                         </div>
                     </div>
                     <div className="shippingaddress_body_address">
-                        <label>Address</label>
+                        <input placeholder="Address"></input>
                     </div>
                     <div className="shippingaddress_body_apartment">
-                        <label>Appaetnentment,suit,e.t.c (optinal)</label>
+                        <input placeholder="Appaetnentment,suit,e.t.c (optinal)"></input>
                     </div>
                     <div className="shippingaddress_body_city">
-                        <label>City</label>
+                        <input placeholder="City"></input>
                     </div>
                     <div className="shippingaddress_body_place">
                         <div className="shippingaddress_body_place_country">
-                            <label>Bangladesh</label>
+                            <input placeholder="Bangladesh"></input>
                         </div>
                         <div className="shippingaddress_body_place_postalcode">
-                            <label>Postal Code</label>
+                            <input placeholder="Postal Code"></input>
                         </div>
                     </div>
                 </div>

@@ -14,19 +14,48 @@ import "./Homepage.css";
 import BrandList from "../Components/BrandList";
 import { useNavigate } from "react-router-dom";
 export default function Homepage() {
-  const navigate=useNavigate();
-  const handleCartClick=()=>{
-    navigate('/CartPage')
-  }
+  const navigate = useNavigate();
+  const handleCartClick = () => {
+    navigate("/CartPage");
+  };
+  const handleLoginClick = () => {
+    navigate("/Loginpage");
+  };
+  const handleShopClick = () => {
+    navigate("/Shoppage");
+  };
+  const handleSignupClick = () => {
+    navigate("/Loginpage");
+  };
+  const handleProfilePageClick = () => {
+    navigate("/Profilepage");
+  };
+  const handleOrderListClick = () => {
+    navigate("/Orderlistpage");
+  };
+  const handleOrderDetailPageClick = () => {
+    navigate("/Orderdetailpage");
+  };
+  const handleViewDetailsClick = () => {
+    navigate("/Singleproductpage");
+  };
+  const handleShoppageClick = () => {
+    navigate("/Shoppage");
+  };
+
   return (
     <>
-      <Header handleCartClick={handleCartClick}/>
-      <Mainbanner />
+      <Header
+        handleCartClick={handleCartClick}
+        handleLoginClick={handleLoginClick}
+        handleShopClick={handleShopClick}
+      />
+      <Mainbanner handleShoppageClick={handleShoppageClick} />
       <div className="componentfeaturedlist">
-        <Featuredlist />
+        <Featuredlist handleViewDetailsClick={handleViewDetailsClick} />
       </div>
       <div className="componentlatestproducts">
-        <LatestProducts />
+        <LatestProducts handleViewDetailsClick={handleViewDetailsClick}/>
       </div>
       <div className="componentofferlist">
         <Offerlist />
@@ -35,16 +64,24 @@ export default function Homepage() {
         <InBetweenBanner1 />
       </div>
       <div className="componenttrendingproducts">
-        <TrendingProducts  />
-        <Discountitem />
-        <Topcategories />
+        <TrendingProducts handleShoppageClick={handleShoppageClick} />
+        <Discountitem handleShoppageClick={handleShoppageClick} />
+        <Topcategories 
+        handleShoppageClick={handleShoppageClick} 
+        handleViewDetailsClick={handleViewDetailsClick}
+        />
       </div>
       <div className="componentinbetweenbanner2">
-        <InBetweenBanner2 />
+        <InBetweenBanner2 handleShoppageClick={handleShoppageClick}/>
       </div>
-      <BrandList/>
+      <BrandList />
       <Latestblog />
-      <Footer />
+      <Footer
+        handleSignupClick={handleSignupClick}
+        handleProfilePageClick={handleProfilePageClick}
+        handleOrderListClick={handleOrderListClick}
+        handleOrderDetailPageClick={handleOrderDetailPageClick}
+      />
     </>
-  )
+  );
 }

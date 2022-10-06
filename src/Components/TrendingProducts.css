@@ -181,12 +181,3 @@
   padding-left: 22px;
   /* padding-bottom: 35px; */
 }
-@media only screen and (max-width: 500px) {
-  .tp-r2{
-    display: contents;
-  }
-  .tp-r3-cover{
-    display: contents;
-  }
-
-}

@@ -188,9 +188,35 @@
 .Latestblog_row2_col3_text_l1_p1 {
     padding-right: 15px;
 }
+
+
+/************************************/
+
 @media only screen and (max-width: 500px) {
-    .Latestblog_row2{
-        display: contents;
+    .Latestblog{
+        /* margin-bottom: 20px; */
     }
-  
-  }
+    .Latestblog_row1{
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    .Latestblog_row2_col1_image img,
+    .Latestblog_row2_col2_image img{
+        max-width: 190px;
+    }
+    .Latestblog_row2{
+        margin: 0;
+        padding: 0;
+        /* margin-right: 10px; */
+    }
+    .Latestblog_row2_col1,
+    .Latestblog_row2_col2{
+        /* display: flex; */
+        width: 40%;
+        padding: 0;
+        margin: 0%;
+    }
+    .Latestblog_row2_col3{
+        display: none;
+    }
+}

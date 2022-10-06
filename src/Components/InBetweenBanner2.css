@@ -39,3 +39,25 @@
     height: 49px;
 
 }
+
+/****************************************/
+
+@media only screen and (max-width: 500px) {
+    .InBetweenBanner1_container{
+        display: flex;
+        flex-direction: column;
+        /* padding: 0; */
+        margin: 0;
+    }
+    .InBetweenBanner1_leftimg_col1{
+        padding: 0;
+    }
+    .InBetweenBanner1_leftimg_col1 img{
+        max-width: 400px;
+    }
+    .InBetweenBanner1_righttext_col2{
+        width: 100%;
+        padding: 0px;
+        /* margin: 0; */
+    }
+}

@@ -197,13 +197,3 @@
     font-weight: 500;
     /* line-height: 16.41px; */
 }
-@media only screen and (max-width: 500px) {
-   .InBetweenBanner1_leftimg_col1 img{
-    width: 100px;
-   }
-   .InBetweenBanner1_right_button_col2_row3{
-    width: fit-content;
-   }
-
-
-}

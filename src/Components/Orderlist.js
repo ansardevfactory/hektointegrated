@@ -22,13 +22,13 @@ function Orderlist() {
         <div className="orderlist-col-2-lbl-pack">
           <label className="orderlist-lbs-sh7667wgs">Dictum morbi</label>
           <div className="orderlist-26b-rdehd">
-            <label>$26.00</label>
+            <label className="">$26.00</label>
           </div>
           {/* <label >$26.00</label> */}
 
           <div className="orderlist-lbl-orderplacedon">
             <label className="orderlist-326fwe6we6">Order Placed On </label>
-            <label> : 2022-6-21 </label>
+            <label className="orderlist-326fwe6we6_lab2"> : 2022-6-21 </label>
           </div>
 
           <div className="orderlist-lbl-orderplacedon">
