@@ -30,7 +30,7 @@
 }
 
 .Discountitem_row1_line2_b2,
-.Discountitem_row1_line2_b3{
+.Discountitem_row1_line2_b3 {
     padding-left: 20px;
 }
 
@@ -149,24 +149,9 @@
 .Discountitem_row2_col1_l3 {
     line-height: 30px;
 }
-
-/*************************/
-
 @media only screen and (max-width: 500px) {
-    .Discountitem_row2{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        /* background-color: yellow; */
-    }
-    .Discountitem_row2_col1{
-        margin-top: 20px;
-        margin-left: 40px;
-        padding: 0px;
-    }
+  .Discountitem_row2_col2 img{
+    width: 100px;
+  }
 
-.Discountitem_row2_col2{
-    padding-left: 148px;
-}
 }
