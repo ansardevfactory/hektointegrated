@@ -1,0 +1,12 @@
+.orderdetailpage_col{
+    display: flex;
+    margin-left: 20%;
+}
+
+.orderdetailpage_col_col1{
+    width: 70%;
+   }
+
+.orderdetailpage_col_col2{
+    width: 10%;
+}
