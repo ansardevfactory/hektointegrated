@@ -1,216 +1,214 @@
+.Header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 .Header_r1 {
-    background-color: #7E33E0;
-    padding: 10px 10%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-
+  background-color: #7e33e0;
+  padding: 10px 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  justify-content: space-between;
 }
 
-
 .Header_r1_left {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-
+  display: flex;
+  flex-direction: row;
 }
 
 .Header_r1_left_mailid {
-    padding-left: 100px;
-    display: flex;
-    flex-direction: row;
-    color: white;
-
+  display: flex;
+  flex-direction: row;
+  color: white;
 }
 
 .Header_r1_left_mailid_mail {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .Header_r1_left_contact {
-    display: flex;
-    flex-direction: row;
-    padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
 }
 
-.Header_r1_left_contact_number{
-    padding-left: 10px;
-
+.Header_r1_left_contact_number {
+  padding-left: 10px;
 }
 
 .Header_r1_left_contact_number label {
-    color: white;
+  color: white;
 }
 
 .Header_r1_right {
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .Header_r1_right_1 select {
-    background-color: #7E33E0;
-    border: none;
-    color: white;
+  background-color: #7e33e0;
+  border: none;
+  color: white;
 }
 
 .Header_r1_right_2 select {
-    background-color: #7E33E0;
-    border: none;
-    color: white;
+  background-color: #7e33e0;
+  border: none;
+  color: white;
 }
 
 .Header_r1_right_login button {
-    background-color: #7E33E0;
-    border: none;
-    color: white;
+  background-color: #7e33e0;
+  border: none;
+  color: white;
 }
 
 .Header_r1_right_3 {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .Header_r1_right_4 {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .Header_r1_right_4_wishlist label {
-    color: white;
-    padding-right: 5px;
+  color: white;
+  padding-right: 5px;
 }
 
 .Header_r2 {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 90px;
-    padding-right: 150px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 5%;
+  justify-content: space-between;
 }
 
 .Header_r2_col1 {
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .Header_r2_col1 label {
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    font-family: Josefin Sans;
-    font-size: 2rem;
-    text-shadow: 1px 1px;
-
-
-
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-family: Josefin Sans;
+  font-size: 2rem;
+  text-shadow: 1px 1px;
 }
 
 .Header_r2_col2 {
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.Header_r2_col2 li {
+  padding-left: 10%;
+  margin: 0;
+  list-style-type: none;
 }
 
 .Header_r2_col2 select {
-    border: none;
-    color: rgb(214, 50, 78);
+  border: none;
+  color: rgb(214, 50, 78);
 }
 
 .Header_r2_col2 button {
-
-    border: none;
-    background-color: white;
+  border: none;
+  background-color: white;
 }
 
 .Header_r2_col3 {
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    justify-content: flex-end;
-   
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.Header_r2_col3 button {
-    background-color: #FB2E86;
-    border: none;
+.Header_r2_col3 div {
+  background-color: #fb2e86;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Header_r2_col3 input {
-    border-width: 3px;
-    border-color: #E7E6EF;
-    border-style: solid;
+  border-width: 1px;
+  border-color: #e7e6ef;
+  border-style: solid;
+  outline: none;
+}
+.Header_r2_col3 img {
+  padding: 0 8px;
 }
 .header_mobview,
-.header_mobview1{
-    visibility: hidden;
-    padding-left: 10px;
+.header_mobview1 {
+  display: none;
+  padding-left: 10px;
 }
 
 @media only screen and (max-width: 500px) {
-    .header_mobview,
-    .header_mobview1{
-        visibility: visible;
-    }
-   .Header_r1{
+  .header_mobview,
+  .header_mobview1 {
+    display: flex;
+  }
+  .Header_r1 {
     display: none;
-   } 
-   .Header_r2{
+  }
+  .Header_r2 {
     display: flex;
     flex-direction: column;
-    background-color: #7E33E0; 
-    justify-content: center;  
+    background-color: #7e33e0;
+    justify-content: center;
     padding: 10px 10px;
-   }
-   .Header_r2_col1{
+  }
+  .Header_r2_col1 {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 10px;
-   }
-   .Header_r2_col1 label{
-    padding-left:90px;
-   }
-   .Header_r2_col2_outer{
+  }
+  .Header_r2_col1 label {
+    padding-left: 90px;
+  }
+  .Header_r2_col2_outer {
     display: block;
-   }
-   .Header_r2_col2{
+  }
+  .Header_r2_col2 {
     display: flex;
     flex-direction: column;
     width: 100%;
     /* display: none; */
-   }
-   .Header_r2_col3{
+  }
+  .Header_r2_col3 {
     width: 100%;
     justify-content: center;
-   }
-   .Header_r2_col2 button{
+  }
+  .Header_r2_col2 button {
     background-color: transparent;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-
-   }
-   .Header_r2_col3 input{
+  }
+  .Header_r2_col3 input {
     background-color: transparent;
-   }
-   .Header_r2_col1 img{
+  }
+  .Header_r2_col1 img {
     width: 30px;
     height: 30px;
-   }
-/* .header_mobview1 :hover .Header_r2_col2_outer{
+  }
+  /* .header_mobview1 :hover .Header_r2_col2_outer{
     display: block;
    } */
-   .headermenu{
+  .headermenu {
     display: none;
-   }
   }
+}

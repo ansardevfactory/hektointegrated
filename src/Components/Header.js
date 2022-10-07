@@ -16,12 +16,12 @@ function Header({
   handleHomeClick,
   handleShopClick,
 }) {
-  const [style,setStyle]=useState("headermenu");
-  const handleMenuClick=()=>{
-    setStyle("Header_r2_col2_outer")
-  }
+  const [style, setStyle] = useState("headermenu");
+  const handleMenuClick = () => {
+    setStyle("Header_r2_col2_outer");
+  };
   return (
-    <>
+    <div className="Header">
       <div className="Header_r1">
         <div className="Header_r1_left ">
           <div className="Header_r1_left_mailid">
@@ -46,9 +46,9 @@ function Header({
         <div className="Header_r1_right">
           <div className="Header_r1_right_1">
             <select>
-              <option> english</option>
-              <option> hindi</option>
-              <option> tamil</option>
+              <option> English</option>
+              <option> Hindi</option>
+              <option> Tamil</option>
             </select>
           </div>
 
@@ -83,42 +83,34 @@ function Header({
       </div>
       <div className="Header_r2">
         <div className="Header_r2_col1">
-          <img src={header_menumob} className="header_mobview1" 
-          onClick={e=>handleMenuClick()}
+          <img
+            src={header_menumob}
+            className="header_mobview1"
+            onClick={(e) => handleMenuClick()}
           />
           <label> Logo</label>
-          <div>
+          <div className="header_mobview">
             <img src={Header_user} className="header_mobview" />
             <img src={Header_heart} className="header_mobview" />
             <img src={Header_cart} className="header_mobview" />
           </div>
         </div>
-        <div className={style}>
-          <div className="Header_r2_col2_outer">
-            <div className="Header_r2_col2">
-              {/* <select>
-            <option > Home</option>
-            <option> A</option>
-            <option> B</option>
-          </select> */}
-              <button onClick={(e) => handleHomeClick()}>Home</button>
-              <button> Pages </button>
-              <button>Products </button>
-              <button> Blog </button>
-              <button onClick={(e) => handleShopClick()}>Shop </button>
-              <button>Contact </button>
-            </div>
-            <div className="Header_r2_col3">
-              <input type="text" />
-              <button>
-                {" "}
-                <img src={Header_searchlens} />
-              </button>
-            </div>
+        <ul className="Header_r2_col2">
+          <li onClick={(e) => handleHomeClick()}>Home</li>
+          <li>Pages</li>
+          <li>Products</li>
+          <li>Blog</li>
+          <li onClick={(e) => handleShopClick()}>Shop</li>
+          <li>Contact</li>
+        </ul>
+        <div className="Header_r2_col3">
+          <input type="text" />
+          <div>
+            <img src={Header_searchlens} />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default Header;
