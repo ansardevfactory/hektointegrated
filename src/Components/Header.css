@@ -80,7 +80,7 @@
 }
 
 .Header_r2 {
-  background-color: white;
+  background-color: #7e33e0;
   display: flex;
   flex-direction: row;
   padding: 10px 5%;
@@ -91,6 +91,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: white;
 }
 
 .Header_r2_col1 label {
@@ -113,6 +114,7 @@
   padding-left: 10%;
   margin: 0;
   list-style-type: none;
+  color: white;
 }
 
 .Header_r2_col2 select {
@@ -152,6 +154,63 @@
 .header_mobview1 {
   display: none;
   padding-left: 10px;
+}
+
+.menubar {
+  background-color: white;
+  padding: 0 5%;
+  width: 90%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  color: black;
+}
+.menubar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menubar li {
+  list-style-type: none; 
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(12, 11, 11);
+  border-bottom: 3px solid white;
+}
+.menubar li:hover {
+  color: #7e33e0;
+  display: flex;
+  border-bottom: 3px solid #7e33e0;
+}
+.menubar_popup {
+  position: absolute;
+  display: none;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  border: 1px solid gray;
+  margin-top: 35px; 
+}
+.menubar_popup_left ul {
+  display: flex;
+  flex-direction: column;
+}
+.menubar_title{
+  width: 100%;
+  padding: 8px 0;
+  justify-content: center;
+  display: flex;   
+}
+.menubar li:hover~.menubar_popup {
+  display: flex;
+}
+.menubar_title:hover ~ .menubar_popup {
+  display: flex;
+}
+.menubar_popup:hover {
+  display: flex;
 }
 
 @media only screen and (max-width: 500px) {

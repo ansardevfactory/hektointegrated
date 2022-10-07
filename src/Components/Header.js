@@ -10,7 +10,7 @@ import header_menumob from "./Images/header_menumob.png";
 import { useState } from "react";
 // import header_usermob from "./Images/header_usermob.png";
 // import header_wishlistmob from "./Images/header_wishlistmob.png";
-function Header({
+export default function Header({
   handleCartClick,
   handleLoginClick,
   handleHomeClick,
@@ -110,7 +110,72 @@ function Header({
           </div>
         </div>
       </div>
+      <Menubar />
     </div>
   );
 }
-export default Header;
+function Menubar() {
+  const mobile = [
+    {
+      title: "mobile_one",
+      cat1: ["cat1_one", "cat1_two"],
+      cat2: ["cat2_one", "cat2_two"],
+      cat3: ["cat3_one", "cat3_two"],
+    },
+  ];
+  const laptops = [
+    "laptops_one",
+    "laptops_two",
+    "laptops_three",
+    "laptops_four",
+  ];
+  const electronics = ["electronics_one", "electronics_two"];
+  return (
+    <>
+      <div className="menubar">
+        <ul>
+          <li>
+            <label className="menubar_title">Mobile</label>
+            <Popup data={mobile} />
+          </li>
+          <li>
+            <label className="menubar_title">Laptops</label>
+            <Popup data={laptops} />
+          </li>
+          <li>
+            <label className="menubar_title">Electronics</label>
+            <Popup data={electronics} />
+          </li>
+          <li>
+            <label className="menubar_title">TV</label>
+            <Popup data={mobile} />
+          </li>
+          <li>
+            <label className="menubar_title">Mobile</label>
+            <Popup data={mobile} />
+          </li>
+          <li>
+            <label className="menubar_title">Mobile</label>
+            <Popup data={mobile} />
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+}
+
+function Popup({ data }) {
+  return (
+    <>
+      <div className="menubar_popup">
+        <div className="menubar_popup_left">
+          <ul>
+            {data.map((itm, indx) => {
+              return <li>{itm.title}</li>;
+            })}
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+}

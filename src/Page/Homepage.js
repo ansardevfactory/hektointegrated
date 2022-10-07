@@ -13,7 +13,6 @@ import Footer from "../Components/Footer";
 import "./Homepage.css";
 import BrandList from "../Components/BrandList";
 import { useNavigate } from "react-router-dom";
-import Menubar from "../Components/Menubar";
 export default function Homepage() {
   const navigate = useNavigate();
   const handleCartClick = () => {
@@ -50,8 +49,7 @@ export default function Homepage() {
         handleCartClick={handleCartClick}
         handleLoginClick={handleLoginClick}
         handleShopClick={handleShopClick}
-      />
-      <Menubar/>
+      /> 
       <Mainbanner handleShoppageClick={handleShoppageClick} />
       <div className="componentfeaturedlist">
         <Featuredlist handleViewDetailsClick={handleViewDetailsClick} />
