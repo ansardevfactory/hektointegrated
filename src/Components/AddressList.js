@@ -4,6 +4,7 @@ import AddressList_plusbutton from "./Images/AddressList_plusbutton.png"
 import "./AddressList.css"
 function AddressList() {
     return <>
+    <div className="AddressList">
         <div className="AddressList_body">
             <div className="AddressList_col0">
                 <div className="AddressList_heading">
@@ -59,7 +60,7 @@ function AddressList() {
                 </div>
             </div>
         </div>
-
+        </div>
 
     </>
 }

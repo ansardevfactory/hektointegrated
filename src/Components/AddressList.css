@@ -1,8 +1,13 @@
+.AddressList{
+    justify-content: center;
+    display: flex;
+}
 .AddressList_body {
     display: flex;
     padding-top: 60px;
     flex-direction: row;
     justify-content: center;
+    width: 40%;
 }
 
 .AddressList_col0_button1 {
@@ -48,7 +53,7 @@
 .AddressList_col1 {
     display: flex;
     flex-direction: column;
-    padding-right: 180px;
+    padding-right: 120px;
 
 }
 
@@ -108,3 +113,13 @@
     border: none;
     background-color: #FFFFFF;
 }
+
+
+/******************************************************/
+
+/* @media only screen and (max-width: 500px) {
+    .AddressList_body{
+        width: 80%;
+        
+    }
+} */
