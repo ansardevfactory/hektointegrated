@@ -1,4 +1,5 @@
 import "./Header.css";
+import { BsFillBagCheckFill, BsFillCupFill } from "react-icons/bs";
 import Header_phone from "./Images/Header_phone.png";
 import Header_envelope from "./Images/Header_envelope.png";
 import Header_user from "./Images/Header_user.png";
@@ -124,37 +125,46 @@ function Menubar() {
     },
   ];
   const laptops = [
-    "laptops_one",
-    "laptops_two",
-    "laptops_three",
-    "laptops_four",
+    {
+      title: "mobile_one",
+      cat1: ["cat1_one", "cat1_two"],
+      cat2: ["cat2_one", "cat2_two"],
+      cat3: ["cat3_one", "cat3_two"],
+    },
   ];
-  const electronics = ["electronics_one", "electronics_two"];
+  const electronics = [
+    {
+      title: "mobile_one",
+      cat1: ["cat1_one", "cat1_two"],
+      cat2: ["cat2_one", "cat2_two"],
+      cat3: ["cat3_one", "cat3_two"],
+    },
+  ];
   return (
     <>
       <div className="menubar">
-        <ul>
-          <li>
+        <ul className="menubar_ul">
+          <li className="menubar_li">
             <label className="menubar_title">Mobile</label>
             <Popup data={mobile} />
           </li>
-          <li>
+          <li className="menubar_li">
             <label className="menubar_title">Laptops</label>
             <Popup data={laptops} />
           </li>
-          <li>
+          <li className="menubar_li">
             <label className="menubar_title">Electronics</label>
             <Popup data={electronics} />
           </li>
-          <li>
+          <li className="menubar_li">
             <label className="menubar_title">TV</label>
             <Popup data={mobile} />
           </li>
-          <li>
+          <li className="menubar_li">
             <label className="menubar_title">Mobile</label>
             <Popup data={mobile} />
           </li>
-          <li>
+          <li className="menubar_li">
             <label className="menubar_title">Mobile</label>
             <Popup data={mobile} />
           </li>
@@ -165,15 +175,120 @@ function Menubar() {
 }
 
 function Popup({ data }) {
+  const [right, setRight] = useState({
+    title: "mobile_one",
+    cat1: ["cat1_one", "cat1_two"],
+    cat2: ["cat2_one", "cat2_two"],
+    cat3: ["cat3_one", "cat3_two"],
+  });
   return (
     <>
       <div className="menubar_popup">
         <div className="menubar_popup_left">
           <ul>
             {data.map((itm, indx) => {
-              return <li>{itm.title}</li>;
+              return (
+                <li>
+                  <BsFillBagCheckFill className="menubar_popup_icon" />
+                  {itm.title}
+                </li>
+              );
             })}
+
+            {/* <li><BsFillBagCheckFill className="menubar_popup_icon"/>One</li>
+            <li><BsFillBagCheckFill className="menubar_popup_icon"/>Two</li>
+            <li><BsFillBagCheckFill className="menubar_popup_icon"/>Three</li>
+            <li><BsFillBagCheckFill className="menubar_popup_icon"/>Four</li> */}
           </ul>
+        </div>
+        <div className="menubar_popup_right">
+          <div className="menubar_popup_right_one">
+            <h3>Shop By Category One</h3>
+            <ul>
+              {right.cat1.map((itm, indx) => {
+                return (
+                  <li>
+                    <BsFillCupFill className="menubar_popup_icon" />
+                    {itm}
+                  </li>
+                );
+              })}
+              {/* <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                FillOne
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Two
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Three
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Four
+              </li> */}
+            </ul>
+          </div>
+          <div className="menubar_popup_right_one">
+            <h3>Shop By Category One</h3>
+            <ul>
+              {right.cat2.map((itm, indx) => {
+                return (
+                  <li>
+                    <BsFillCupFill className="menubar_popup_icon" />
+                    {itm}
+                  </li>
+                );
+              })}
+              {/* <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                One
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Two
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Three
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Four
+              </li> */}
+            </ul>
+          </div>
+          <div className="menubar_popup_right_one">
+            <h3>Shop By Category One</h3>
+            <ul>
+              {right.cat3.map((itm, indx) => {
+                return (
+                  <li>
+                    <BsFillCupFill className="menubar_popup_icon" />
+                    {itm}
+                  </li>
+                );
+              })}
+              {/* <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                One
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Two
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Three
+              </li>
+              <li>
+                <BsFillCupFill className="menubar_popup_icon" />
+                Four
+              </li> */}
+            </ul>
+          </div>
         </div>
       </div>
     </>

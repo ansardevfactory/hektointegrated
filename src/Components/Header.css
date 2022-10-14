@@ -164,22 +164,22 @@
   font-size: 0.8rem;
   color: black;
 }
-.menubar ul {
+.menubar_ul {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.menubar li {
-  list-style-type: none; 
+.menubar_li {
+  list-style-type: none;
   width: 100%;
   text-align: center;
   font-weight: bold;
   color: rgb(12, 11, 11);
   border-bottom: 3px solid white;
 }
-.menubar li:hover {
+.menubar_li:hover {
   color: #7e33e0;
   display: flex;
   border-bottom: 3px solid #7e33e0;
@@ -191,19 +191,15 @@
   width: 100%;
   left: 0;
   border: 1px solid gray;
-  margin-top: 35px; 
+  margin-top: 35px;
 }
-.menubar_popup_left ul {
-  display: flex;
-  flex-direction: column;
-}
-.menubar_title{
+.menubar_title {
   width: 100%;
   padding: 8px 0;
   justify-content: center;
-  display: flex;   
+  display: flex;
 }
-.menubar li:hover~.menubar_popup {
+.menubar_li:hover ~ .menubar_popup {
   display: flex;
 }
 .menubar_title:hover ~ .menubar_popup {
@@ -213,6 +209,57 @@
   display: flex;
 }
 
+.menubar_popup_left {
+  width: 15%;
+  text-align: left;
+}
+.menubar_popup_left ul {
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin: 0;
+}
+.menubar_popup_left li {
+  border-bottom: 1px solid gray;
+  padding: 10px 10%;
+  background-color: white;
+  justify-content: left;
+  color: black;
+  align-items: center;
+  font-weight: normal;
+  display: flex;
+}
+
+.menubar_popup_left li:hover {
+  font-weight: bold;
+}
+.menubar_popup_right {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+}
+.menubar_popup_right h3 {
+  color: rgb(161, 160, 160);
+  font-size: .9rem;
+}
+.menubar_popup_right ul {
+  padding: 0;
+  margin: 0;
+}
+.menubar_popup_right li {
+  color: black;
+  padding: 10px 0;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+.menubar_popup_right li:hover{
+  font-weight: bold;
+}
+.menubar_popup_icon{
+  margin-right: 10px;
+}
 @media only screen and (max-width: 500px) {
   .header_mobview,
   .header_mobview1 {
