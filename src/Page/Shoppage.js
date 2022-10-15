@@ -54,10 +54,12 @@ export default function Shoppage_gridpage() {
           handleShopClick={handleShopClick}
         />
         <Subbanner title={"Shopping"} />
+        <div className="shoppage_filterhorizontal">
         <Filterhorizontal
           handleListpageClick={handleListpageClick}
           handleGridpageClick={handleGridpageClick}
         />
+        </div>
         <div className="shoppage_gridpage_gridview">
           <div className="shoppage_gridpage_col_fverticalbar">
             <FilterBarVertical />

@@ -150,3 +150,28 @@
     color: white;
     background-color: #FB2E86;
 }
+
+
+/********************************************/
+
+
+@media only screen and (max-width: 500px) {
+    .orderdetails_row1{
+        width: 100%;
+    }
+    .orderdetails_row1_col1{
+        align-items: center;
+    }
+    .orderdetails_row1_col1 img{
+        max-width: 60px;
+        height: 100px;
+    }
+    .singleorderdetails_row2 h4,
+    .singleorderdetails_row2 label{
+        padding-left: 50px;
+    }
+    .orderdetails_row2_div{
+        margin-left: 10%;
+        /* display: flex; */
+    }
+}

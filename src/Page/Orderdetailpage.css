@@ -10,3 +10,12 @@
 .orderdetailpage_col_col2{
     width: 10%;
 }
+
+/********************************************/
+
+@media only screen and (max-width: 500px) {
+    .orderdetailpage_col{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -45,7 +45,7 @@
 
 .orderlist-326fwe6we6{
 
-    /* padding-right: 42px; */
+    padding-right: 42px;
     /* background-color: blue; */
 }
 
@@ -58,7 +58,7 @@
     padding-left: 22px;
     /* padding-right: 224px; */
     width: 60%;
-    background-color: yellow;
+    /* background-color: yellow; */
    
 }
 
@@ -101,6 +101,19 @@ color: blue;
     .orderlist-lbl-orderplacedon{
         /* width: 50%; */
     }
+    .orderlist-326fwe6we6{
+        padding: 0;
+    }
+    .orderlist-326fwe6we6_lab2{
+        padding-left: 20px;
+    }
+
+    .ordelist-76473{
+        padding: 0;
+        padding-left: 70px;
+    }
+
+
     /* .orderlist-326fwe6we6{
         padding: 0;
         padding-top: 20px;

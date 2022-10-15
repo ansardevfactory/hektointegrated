@@ -91,9 +91,9 @@ export default function Header({
           />
           <label> Logo</label>
           <div className="header_mobview">
-            <img src={Header_user} className="header_mobview" />
+            <img src={Header_user} className="header_mobview" onClick={(e) => handleLoginClick()}/>
             <img src={Header_heart} className="header_mobview" />
-            <img src={Header_cart} className="header_mobview" />
+            <img src={Header_cart} className="header_mobview" onClick={(e) => handleCartClick()}/>
           </div>
         </div>
         <ul className="Header_r2_col2">

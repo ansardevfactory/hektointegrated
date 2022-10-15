@@ -1,12 +1,21 @@
 import React from "react";
 import cha from "./Images/Gridview-cha.png";
 import clr from "./Images/Gridview-clr.png";
+import { MdOutlineFilterAlt } from "react-icons/md";
 import "./Gridview.css";
 
 function Gridview() {
   return (
     <div className="gv-outer-row-2-main">
       <div className="gv-outer-cover">
+        <div className="Gridview_mobileview">
+          <div className="Gridview_mobileview_inner">
+          <label>Filter</label>
+          <div>
+          <MdOutlineFilterAlt />
+          </div>
+          </div>
+        </div>
         <div className="gv-outer-cover-r1">
           <Singlegridview />
           <Singlegridview />
@@ -26,8 +35,6 @@ function Gridview() {
           <Singlegridview />
         </div>
       </div>
-
-      <div className="gv-row-2"></div>
     </div>
   );
 }
@@ -49,8 +56,14 @@ function Singlegridview() {
           </div>
 
           <div className="gv-chr1-dollor-lbl">
-            <label className="gv-r1-blue-dlor"> < span className="gv-span">$26.00</span></label>
-            <label className="gv-r1-pink-dollr"> <s>$42.00  </s></label>
+            <label className="gv-r1-blue-dlor">
+              {" "}
+              <span className="gv-span">$26.00</span>
+            </label>
+            <label className="gv-r1-pink-dollr">
+              {" "}
+              <s>$42.00 </s>
+            </label>
           </div>
         </div>
       </div>

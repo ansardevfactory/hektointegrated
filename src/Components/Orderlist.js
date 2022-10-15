@@ -53,7 +53,7 @@ function Orderlist() {
 
           <div className="orderlist-lbl-orderplacedon">
             <label className="orderlist-326fwe6we6">Order Placed On </label>
-            <label> : 2022-6-21 </label>
+            <label className="orderlist-326fwe6we6_lab2"> : 2022-6-21 </label>
           </div>
 
           <div className="orderlist-lbl-orderplacedon">
@@ -78,7 +78,7 @@ function Orderlist() {
 
           <div className="orderlist-lbl-orderplacedon">
             <label className="orderlist-326fwe6we6">Order Placed On </label>
-            <label> : 2022-6-21 </label>
+            <label className="orderlist-326fwe6we6_lab2"> : 2022-6-21 </label>
           </div>
 
           <div className="orderlist-lbl-orderplacedon">
@@ -103,7 +103,7 @@ function Orderlist() {
 
           <div className="orderlist-lbl-orderplacedon">
             <label className="orderlist-326fwe6we6">Order Placed On </label>
-            <label> : 2022-6-21 </label>
+            <label className="orderlist-326fwe6we6_lab2"> : 2022-6-21 </label>
           </div>
 
           <div className="orderlist-lbl-orderplacedon">
@@ -128,7 +128,7 @@ function Orderlist() {
 
           <div className="orderlist-lbl-orderplacedon">
             <label className="orderlist-326fwe6we6">Order Placed On </label>
-            <label> : 2022-6-21 </label>
+            <label className="orderlist-326fwe6we6_lab2"> : 2022-6-21 </label>
           </div>
 
           <div className="orderlist-lbl-orderplacedon">
